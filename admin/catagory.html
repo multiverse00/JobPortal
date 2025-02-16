@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <title>Catagory</title>
+</head>
+
+<body>
+    <header class="main-header" style="background-color: #EBEAFF;">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="margin-left: 40px;">
+            <a class="navbar-brand" href="">Job Portal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 40px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../logout.php">Logout</a>
+                    </li>
+                   
+                    
+                </ul>
+            </div>
+        </nav>
+        
+        </header>
+    <section style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="box box-solid">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Welcome <b>Admin</b></h3>
+                        </div>
+                        <div class="box-body no-padding">
+                            <ul class="nav flex-column">
+                                <li><a class="btn" href="catagory.html">Dashboard</a></li>
+                                <li><a class="btn" href="allcategory.php">Catagory</a></li>
+                                <li><a class="btn" href="alljobs.php">Active Jobs</a></li>
+                                <li><a class="btn" href="alluser.php"> Users</a>
+                                </li>
+                                <li class="active"><a class="btn" href="allcompany.php">Companies</a>
+                                </li>
+                                <li class="active"><a class="btn" href="allfeedback.php">Feedback</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h1 class="text-center">New Job Category</h1>
+                    <form action="category.php" id="feedback-form" method="POST">
+
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Catagory Name</label>
+                            <input type="text" id="text" class="form-control" name="category_name"
+                                placeholder="Category Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Category Description</label>
+                            <textarea id="message" class="form-control" name="category_description" rows="5"
+                                placeholder="Catagory Description" required></textarea>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-success">Add Category</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <script src="../bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
